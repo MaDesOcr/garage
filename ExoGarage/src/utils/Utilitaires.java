@@ -13,4 +13,9 @@ public class Utilitaires {
 		Scanner sc = new Scanner(System.in);
 		return sc.nextBoolean();
 	}
+	
+	public static int saisieInt() {
+		Scanner sc = new Scanner(System.in);
+		return sc.nextInt();
+	}
 }

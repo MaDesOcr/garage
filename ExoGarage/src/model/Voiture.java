@@ -13,13 +13,16 @@
 			this.boiteAuto = boiteAuto;
 		}
 
-		
+
 
 		@Override
 		public String toString() {
-			return "Voiture [boiteAuto=" + boiteAuto + " model=" + model + ", typeEssence=" + typeEssence + ", plaque=" + plaque + "]";
+			return "Voiture [boiteAuto=" + boiteAuto + ", id=" + id + ", model=" + model + ", typeEssence="
+					+ typeEssence + ", plaque=" + plaque + ", proprietaire=" + proprietaire + "]";
 		}
+
 		
+
 		
 		
 	}
