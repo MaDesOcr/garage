@@ -1,6 +1,6 @@
 package model;
 
-public class Vehicule {
+public abstract class Vehicule {
 
 	public int id;
 	protected String model;

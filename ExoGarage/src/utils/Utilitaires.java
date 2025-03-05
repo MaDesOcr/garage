@@ -1,21 +1,44 @@
 package utils;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Utilitaires {
 	
 	public static String saisieString() {
-		Scanner sc = new Scanner(System.in);
-		return sc.nextLine();
+		
+		try {
+			Scanner sc = new Scanner(System.in);
+			return sc.nextLine();
+		}
+		catch (Exception e) {
+			return "";			
+		}
 	}
 	
+	
 	public static boolean saisieBoolean() {
-		Scanner sc = new Scanner(System.in);
-		return sc.nextBoolean();
+		try{
+			Scanner sc = new Scanner(System.in);
+			return sc.nextBoolean();
+		}
+		catch(InputMismatchException e) {
+			System.err.println(e.getMessage());
+			return false;
+		}
 	}
 	
 	public static int saisieInt() {
-		Scanner sc = new Scanner(System.in);
-		return sc.nextInt();
+		try {
+			Scanner sc = new Scanner(System.in);
+			return sc.nextInt();
+		}
+		catch (InputMismatchException e) {
+			System.err.println(e.getMessage());
+			return 0;
+		}
+		catch (Exception e) {
+			return 0;
+		}
 	}
 }

@@ -1,15 +1,21 @@
 package data;
 
+import java.util.ArrayList;
+
 import model.Camion;
 import model.Garage;
 import model.Moto;
+import model.Personne;
 import model.Voiture;
 
 public class Data {
 
 	private Garage garage = new Garage();
+	private ArrayList<Personne> clients = new ArrayList<Personne>();
 
 	
+	
+
 	public void initialisationData() {
 		Voiture v1 = new Voiture("Citreon", "ssplomb", false, "AA-111-AA");
 		Voiture v2 = new Voiture("Citreon", "ssplomb", false, "BB-111-BB");
@@ -53,7 +59,15 @@ public class Data {
 	}
 	
 	
-	
+	public ArrayList<Personne> getClients() {
+		return clients;
+	}
+
+
+	public void setClients(ArrayList<Personne> clients) {
+		this.clients = clients;
+	}
+
 	
 	
 	
